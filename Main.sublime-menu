@@ -14,16 +14,13 @@
                         "children":
                         [
                             {
-                                "command": "open_file",
-                                "args": {"file": "${packages}/DirectOpen/DirectOpen (${platform}).sublime-settings"},
-                                "caption": "Settings – Default"
-                            },
-                            {
-                                "command": "open_file",
-                                "args": {"file": "${packages}/User/DirectOpen.sublime-settings"},
-                                "caption": "Settings – User"
-                            },
-                            { "caption": "-" }
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/Direct Open/DirectOpen (${platform}).sublime-settings",
+                                    "user_file": "${packages}/User/DirectOpen.sublime-settings"
+                                },
+                                "caption": "Settings"
+                            }
                         ]
                     }
                 ]
